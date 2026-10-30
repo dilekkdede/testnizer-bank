@@ -1,6 +1,6 @@
 {
   "version": "testnizer-project/2.0",
-  "exportedAt": 1793363001214,
+  "exportedAt": 1793370186212,
   "kind": "project",
   "project": {
     "id": "504964f5-75d9-4b91-b6e4-3cc3b4555bae",
@@ -835,6 +835,27 @@
       "created_at": 1793350834000,
       "updated_at": 1793357175565,
       "branch_id": null
+    },
+    {
+      "id": "6115172c-9f0f-4f45-9d3a-1d9bd3ba098f",
+      "project_id": "504964f5-75d9-4b91-b6e4-3cc3b4555bae",
+      "folder_id": "2c14eaf1-eadf-4466-86a0-2075eec3f6a2",
+      "name": "New Endpoint",
+      "protocol": "http",
+      "method": "GET",
+      "url": "",
+      "params": "[]",
+      "headers": "[]",
+      "body": null,
+      "auth": null,
+      "pre_script": null,
+      "post_script": null,
+      "assertions": "[]",
+      "metadata": null,
+      "sort_order": 0,
+      "created_at": 1793368692325,
+      "updated_at": 1793368692325,
+      "branch_id": null
     }
   ],
   "environments": [
@@ -844,7 +865,7 @@
       "name": "🖥️ Lokal Demo",
       "is_active": 1,
       "created_at": 1793350800000,
-      "updated_at": 1793357175565,
+      "updated_at": 1793364988906,
       "project_id": "504964f5-75d9-4b91-b6e4-3cc3b4555bae"
     },
     {
@@ -853,7 +874,7 @@
       "name": "🚫 Negatif Senaryo (kilitli kullanıcı)",
       "is_active": 0,
       "created_at": 1793350800000,
-      "updated_at": 1793357175565,
+      "updated_at": 1793364988906,
       "project_id": "504964f5-75d9-4b91-b6e4-3cc3b4555bae"
     }
   ],
@@ -1931,6 +1952,21 @@
       "schema_validation": "",
       "created_at": 1793350800000,
       "updated_at": 1793357175565
+    },
+    {
+      "id": "8ab572a2-10e9-4b73-a685-88e906d3e274",
+      "server_id": "3c254c56-f12e-4e13-a251-1e625e2440e7",
+      "method": "GET",
+      "path": "/demo-test",
+      "path_mode": "exact",
+      "description": "",
+      "priority": 0,
+      "enabled": 1,
+      "sort_order": 0,
+      "auth_override": "",
+      "schema_validation": "",
+      "created_at": 1793368605758,
+      "updated_at": 1793368617524
     }
   ],
   "mockResponses": [
@@ -2188,6 +2224,36 @@
       "response_order": 0,
       "enabled": 1,
       "stream_config": "{\"intervalMs\":800,\"heartbeatMs\":0,\"loop\":false,\"onEnd\":\"close\",\"resume\":true}"
+    },
+    {
+      "id": "f1afd9f0-9705-454d-bd0c-36e8ff6da58b",
+      "endpoint_id": "8ab572a2-10e9-4b73-a685-88e906d3e274",
+      "name": "Default",
+      "status_code": 200,
+      "headers": "[{\"name\":\"Content-Type\",\"value\":\"application/json\"}]",
+      "body_type": "json",
+      "body": "{\n  \"ok\": true\n}",
+      "delay_ms": 1,
+      "condition": "{\"type\":\"always\"}",
+      "script": "",
+      "response_order": 0,
+      "enabled": 1,
+      "stream_config": null
+    },
+    {
+      "id": "7ef868d3-30b3-4866-aaba-4a00e717e202",
+      "endpoint_id": "8ab572a2-10e9-4b73-a685-88e906d3e274",
+      "name": "Default",
+      "status_code": 400,
+      "headers": "[{\"name\":\"Content-Type\",\"value\":\"application/json\"}]",
+      "body_type": "json",
+      "body": "{\n  \"ok\": 400\n}",
+      "delay_ms": 0,
+      "condition": "{\"type\":\"400\"}",
+      "script": "",
+      "response_order": 1,
+      "enabled": 1,
+      "stream_config": null
     },
     {
       "id": "7117e109-7cf4-486b-ab6c-b836be69d0de",
